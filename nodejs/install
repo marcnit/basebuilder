@@ -13,8 +13,6 @@ if [ -e /home/ubuntu/.nvm_bin ]; then
 fi
 
 export PERL_MM_USE_DEFAULT=1
-export PERL_EXTUTILS_AUTOINSTALL="--defaultdeps"
-
-perl -MCPAN -e 'install YAML::XS'
+cpan YAML::XS
 
 EOF
