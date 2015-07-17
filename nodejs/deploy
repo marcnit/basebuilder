@@ -26,7 +26,7 @@ rm -f ~/.nvm_bin
 ln -s $NVM_BIN ~/.nvm_bin
 
 if [ -f ${CURRENT_DIR}/tsuru.yml ]; then
-  ruby ${SOURCE_DIR}/nodejs/install.rb
+  perl ${SOURCE_DIR}/nodejs/install.pl ${CURRENT_DIR}/tsuru.yml
 fi
 
 if [ -f ${CURRENT_DIR}/package.json ]; then

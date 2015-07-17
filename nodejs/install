@@ -11,4 +11,10 @@ cat >> /home/ubuntu/.profile <<EOF
 if [ -e /home/ubuntu/.nvm_bin ]; then
 	export PATH="/home/ubuntu/.nvm_bin:$PATH"
 fi
+
+export PERL_MM_USE_DEFAULT=1
+export PERL_EXTUTILS_AUTOINSTALL="--defaultdeps"
+
+perl -MCPAN -e 'install YAML::XS'
+
 EOF
