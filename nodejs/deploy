@@ -25,7 +25,7 @@ nvm install ${NODE_VERSION}
 rm -f ~/.nvm_bin
 ln -s $NVM_BIN ~/.nvm_bin
 
-if [ -f ${CURRENT_DIR}/tsuru.yaml ]; then
+if [ -f ${CURRENT_DIR}/tsuru.yml ]; then
   ruby ${SOURCE_DIR}/nodejs/install.rb
 fi
 
